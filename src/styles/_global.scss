@@ -1,0 +1,22 @@
+@charset "UTF-8";
+@import 'setting';
+body{
+  font-family: 'Noto Sans JP', sans-serif;
+  font-weight: 100;
+  line-height: 2;
+  background-color: $white_color;
+  color: $font_color;
+}
+a{
+  color: $main_color;
+  text-decoration: none;
+}
+p{
+  padding: 1rem 0;
+}
+.bar{
+  background-color: $main_light_color;
+  width: 90px;
+  height: 1px;
+  margin: 2rem auto 0 auto;
+}

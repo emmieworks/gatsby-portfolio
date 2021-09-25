@@ -1,13 +1,22 @@
 module.exports = {
   siteMetadata: {
-    title: `Zero Forest Portfolio`,
+    title: `Zero*Forest`,
     description: `フリーランスWebデザイナー・エンジニアEmiのポートフォリオサイトです`,
-    author: `@emmie0works`,
+    author: `Emi`,
     siteUrl: `https://portfolio.0forest.com/`,
+    social: {
+      twitter: `emmie0works`,
+      github: `emmieworks`,
+      pinterest: `0forest`,
+      instagram: `emmieworks`,
+    },
   },
   plugins: [
+    `gatsby-plugin-sass`,
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-image`,
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -15,8 +24,14 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
-    `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `gallery`,
+        path: `${__dirname}/gallery`,
+      },
+    },
+    `gatsby-transformer-remark`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
@@ -26,7 +41,7 @@ module.exports = {
         background_color: `#725444`,
         theme_color: `#725444`,
         display: `minimal-ui`,
-        icon: `src/images/logo-white.png`, // This path is relative to the root of the site.
+        icon: `src/images/logo.png`, // This path is relative to the root of the site.
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
