@@ -6,6 +6,7 @@
   "author": "Emi <emmie0works@gmail.com>",
   "dependencies": {
     "@fontsource/cormorant-garamond": "^4.5.0",
+    "@fontsource/ephesis": "^4.5.0",
     "@fontsource/montserrat": "^4.5.1",
     "@fontsource/noto-sans-jp": "^4.5.1",
     "gatsby": "^3.14.0",

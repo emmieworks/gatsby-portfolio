@@ -16,13 +16,17 @@ footer{
       padding: 1rem 0;
     }
     li{
+      text-transform: uppercase;
       padding: 1rem 2rem;
+      a{
+        color: $main_color;
+      }
     }
   }
 }
 .bar{
-  background-color: $main_light_color;
-  width: 90px;
+  background-color: $second_light_color;
+  width: 60px;
   height: 1px;
   margin: 2rem auto 0 auto;
 }
@@ -30,7 +34,6 @@ footer{
   border-top: 1px solid $main_light_color;
   padding: 0.5rem 0;
   color: $main_color;
-  font-family: 'Montserrat', sans-serif;
   a{
     font-size: 0.8rem;
   }

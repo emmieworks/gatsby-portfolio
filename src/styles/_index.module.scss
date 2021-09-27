@@ -1,64 +1,77 @@
 @charset "UTF-8";
 @import 'setting';
 
-h2{
-  font-family: 'Cormorant Garamond', serif;
-  font-size: 2rem;
-  margin: 0 auto 2.5rem auto;
-  color: $main_color;
-  text-align: center;
-}
-h3{
-  font-family: 'Cormorant Garamond', serif;
-  line-height: 1.5;
-}
+
 section{
-}
-
-.container{
-  margin: 0 auto;
-  max-width: $container_max;
-}
-
-.gallery{
-  padding: 6rem 0;
-  .container{
-    margin: 2rem auto;
-    display:grid;
-    grid-template-columns:1fr;
-    grid-gap: 3rem;
-    @media screen and (min-width: $pc_min) {
-      grid-template-columns:1fr 1fr 1fr;
-      grid-gap: 1rem;
-    }
+  padding: 4rem 0;
+  @media screen and (min-width: $pc_min) {
+    padding: 6rem 0;
   }
-  article{
-    max-width: 95%;
-    margin: 0 auto;
+}
+
+.hero{
+  z-index: 0;
+  background-image: url(../images/hero-image.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left center;
+  width: 100%;
+  height: 50vh;
+  .container{
+    color: $main_color;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%; // 高さを指定して縦の中央に配置
+    align-items: center;
+    @media screen and (min-width: $pc_min) {
+      align-items: flex-end; // PC時は右寄せ
+    }
+    p{
+      padding: 0.5rem 0;
+
+    }
+    .en{
+      font-family: 'Ephesis', cursive;
+      font-size: 2.4em;
+      transform: rotate(-5deg);
+    }
+    @media screen and (min-width: $pc_min) {
+      p{
+        padding: 0.5rem 0;
+        font-size: 1.2rem;
+      }
+    }
+    text-shadow: 2px 3px 4px $main_light_color; // 文字に影横に2 縦に3　ぼかし4px
   }
 }
 
 .service{
   background: $bg_color;
-  padding: 6rem 0;
-
   .container{
     display:grid;
     grid-template-columns:1fr;
     grid-gap: 3rem;
     @media screen and (min-width: $pc_min) {
-      grid-template-columns:1fr 1fr 1fr;
+      grid-template-columns:1fr 1fr;
       grid-gap: 1rem;
     }
   }
+
   .item{
     position: relative;
-    max-width: 95%;
-    margin: 0 auto;
+    &:hover{
+      opacity: 0.8;
+    }
   }
   h3{
     color: $main_color;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
+    padding: 1rem;
+    @media screen and (min-width: $pc_min) {
+      font-size: 2rem;
+      padding: 1rem 2rem;/*文字と線の間の余白*/
+    }
     font-weight: 300;
     font-style: normal;
     letter-spacing: 0;
@@ -68,67 +81,66 @@ section{
     -ms-transform: translate(-50%,-50%);
     -webkit-transform: translate(-50%,-50%);
     transform: translate(-50%,-50%);
-    background: rgba(247,247,245,0.75);
-    padding: 5px 7px;/*文字と線の間の余白*/
+    background: rgba(247,247,245,0.9);
+    text-align: center;
   }
 }
 
+.gallery{
+  border-top: 1px solid $main_color;
+  border-bottom: 1px solid $main_color;
+  margin: 0.5rem 0;
+
+  .container{
+    margin: 4rem auto;
+    display:grid;
+    grid-template-columns:1fr;
+    grid-gap: 3rem;
+    @media screen and (min-width: $pc_min) {
+      grid-template-columns:1fr 1fr 1fr;
+      grid-gap: 1rem;
+    }
+  }
+}
+
+
 .profile{
+  padding: 0;
   display:grid;
   grid-template-columns:1fr;
+  align-items: center;
   @media screen and (min-width: $pc_min) {
     grid-template-columns:1fr 1fr;
   }
   div.left{
     text-align: center;
-    padding: 4rem 0;
   }
   h3{
     color: $main_color;
-    font-size: 1.2rem;
+    font-size: 1.6rem;
     &:after{
       content: "";
       display: block;
       margin: 1rem auto;
-      width:100px;
+      width:60px;
       height: 1px;
-      background: $main_light_color;
+      background: $bg_color;
     }
   }
-  color: $white_color;
+  color: $main_color;
   div.right{
-    padding: 4rem 1rem;
-    background: $main_light_color;
+    padding: 1rem;
+    background: $bg_color;
     font-size: 0.9rem;
   }
-}
+  p.en{
+    font-family: 'Ephesis', cursive;
+    font-size: 4em;
+    padding: 2rem auto;
+    transform: rotate(-10deg);
+    @media screen and (min-width: $pc_min) {
+      margin-left: -3rem;
+    }
+  }
 
-.contact{
-  padding-top: 4rem;
-  padding-bottom: 4rem;
-  color: $white_color;
-  position: relative;
-
-  h2{
-    color: $white_color;
-  }
-  p{
-    padding: 1rem 0;
-  }
-  .btn{
-    border:1px solid $white_color;
-    color: $white_color;
-  }
-  .container{
-    z-index: 10;
-    position: relative;
-    text-align: center;
-  }
-  .back{
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-  }
 }

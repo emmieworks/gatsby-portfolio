@@ -1,0 +1,178 @@
+@charset "UTF-8";
+@import 'setting';
+
+
+section{
+  padding: 4rem 0;
+  @media screen and (min-width: $pc_min) {
+    padding: 6rem 0;
+  }
+}
+
+.service{
+  background: $bg_color;
+  .container{
+    margin: 6rem auto;
+    display:grid;
+    grid-template-columns:1fr;
+    grid-gap: 3rem;
+    @media screen and (min-width: $pc_min) {
+      grid-template-columns:1fr 1fr;
+      grid-column-gap: 1rem;
+      grid-row-gap: 4rem;
+
+      .desc01,.desc02{
+        padding: 1rem;
+      }
+
+      .desc01{
+        order: 1;
+      }
+      .img01{
+        order: 2;
+      }
+      .desc02{
+        order: 3;
+      }
+      .img02{
+        order: 4;
+      }
+    }
+  }
+  h3{
+    color: $main_color;
+    font-size: 2em;
+    div{
+      font-size: 0.5em;
+    }
+  }
+  ul{
+    li{
+      margin-left: 1rem;
+    }
+    padding: 0.5rem 0;
+    font-size: 0.9em;
+    border-top: 1px solid $main_light_color;
+    border-bottom: 1px solid $main_light_color;
+  }
+}
+
+
+.price{
+  dl{
+    border-top: 1px solid $second_light_color;
+    padding: 0.5rem;
+  }
+  dl:last-of-type{
+    border-bottom: 1px solid $second_light_color;
+  }
+  dt{
+    color: $second_color;
+  }
+  @media screen and (min-width: $pc_min) {
+    dt{
+      float: left;
+      width: 60%;
+    }
+    dd{
+      margin-left: 62%;
+    }
+  }
+}
+
+.process{
+  background: $main_color;
+  h2{
+    color: $white_color;
+    div:before{
+      background-color: $white_color;
+    }
+  }
+  .container{
+    background-color: $white_color;
+    @media screen and (min-width: $pc_min) {
+      padding: 4rem;
+    }
+  }
+  ol{
+    counter-reset:number; /*数字をリセット*/
+    list-style-type: none!important; /*数字を一旦消す*/
+    li{
+      position: relative;
+      padding: 2em 4em;
+      line-height: 2em;
+      font-size: 0.9em;
+      &:before{
+        position: absolute;
+        counter-increment: number;
+        content: counter(number);
+        left: 8px;
+
+        display:inline-block;
+        font-size: 6em;
+        color: $second_color;
+        font-family: 'Cormorant Garamond', serif;
+      }
+      div{
+        color: $second_light_color;
+        font-size: 1.2em;
+        padding-bottom: 1em;
+      }
+    }
+  }
+
+
+}
+
+.notice{
+  margin: 10rem auto 4rem auto;
+  border: 1px solid $main_color;
+  padding: 2rem;
+
+  h2{
+    background-color: $white_color;
+    font-size: 1.4rem;
+    margin-top: -3.2rem;
+    display: block;
+    width: 220px;
+  }
+
+  .container{
+    margin: 2rem auto;
+    display:grid;
+    grid-template-columns:1fr;
+    grid-gap: 3rem;
+    @media screen and (min-width: $pc_min) {
+      grid-template-columns:1fr 1fr 1fr;
+      grid-gap: 1rem;
+    }
+  }
+
+  // icon color
+  color: $main_light_color;
+
+  h3{
+    color: $main_color;
+    margin: 1rem 0;
+    font-size: 1.2rem;
+  }
+  p{
+    font-size: 0.8rem;
+    color: $font_color;
+  }
+}
+
+.faq{
+  dl{
+    padding: 1rem;
+  }
+  dt{
+    color: $second_color;
+    border-bottom: 1px solid $second_light_color;
+  }
+  dd{
+    font-size: 0.9em;
+    padding: 1rem;
+  }
+
+}

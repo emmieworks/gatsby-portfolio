@@ -10,11 +10,11 @@ const Footer = ({ siteTitle }) => (
     <div className={styles.bar}></div>
     <nav>
       <ul>
-        <li><Link to ="/" activeClassName="active">Top</Link></li>
-        <li><Link to ="/#gallery/" activeClassName="active">Gallery</Link></li>
-        <li><Link to ="/service/" activeClassName="active">Service</Link></li>
-        <li><Link to ="/about/" activeClassName="active">About</Link></li>
-        <li><a href="https://0forest.com/contact/" activeClassName="active">Contact</a></li>
+        <li><Link to ="/">Top</Link></li>
+        <li><Link to ="/gallery/">Gallery</Link></li>
+        <li><Link to ="/service/">Service</Link></li>
+        <li><Link to ="/about/">About</Link></li>
+        <li><a href="https://0forest.com/contact/">Contact</a></li>
       </ul>
     </nav>
     <div className={styles.copyright}>© <a href="https://0forest.com">{siteTitle}</a></div>

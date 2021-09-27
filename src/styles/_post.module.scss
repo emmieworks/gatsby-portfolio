@@ -1,0 +1,24 @@
+@charset "UTF-8";
+@import 'setting';
+
+.post{
+  dl{
+    border-top: 1px solid $second_light_color;
+    padding: 0.5rem;
+  }
+  dl:last-of-type{
+    border-bottom: 1px solid $second_light_color;
+  }
+  dt{
+    color: $second_color;
+  }
+  @media screen and (min-width: $pc_min) {
+    dt{
+      float: left;
+      width: 10%;
+    }
+    dd{
+      margin-left: 12%;
+    }
+  }
+}

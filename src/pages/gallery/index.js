@@ -1,16 +1,18 @@
 import * as React from 'react'
+import { graphql } from "gatsby"
 import Layout from '../../components/layout'
-import { Link, graphql } from "gatsby"
-
+import Seo from "../../components/seo"
 import PostCard from "../../components/postcard"
+import * as styles from "../../styles/_gallery.module.scss"
 
 const Gallery = ({data}) => {
   const posts = data.allMarkdownRemark.edges
   return (
     <Layout>
+    <Seo title="Gallery" />
     <section id="gallery">
-      <h2 id="gallery">Gallery</h2>
-      <div>
+      <h2 className="title">Gallery<div>制作実績</div></h2>
+      <div className={`container ${styles.container}`}>
           {posts.map(({ node }) => {
             return <PostCard key={node.frontmatter.slug} node={node} />;
           })}

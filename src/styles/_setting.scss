@@ -1,24 +1,22 @@
 @charset "UTF-8";
-// メインカラー（茶）
-$main_color: #815636;
-$main_light_color: #D8B884;
+// メインカラー（グリーン）
+$main_color: #82927D;
+$main_light_color: #BCCBB8;
+
+//セカンドカラー（ブラウン）
+$second_color: #BE9885;
+$second_light_color: #DBCCBD;
+
+// テキストカラー（ダークグレー）
+$font_color: #4E4E4E;
 
 // リンクカラー（グリーン）
-$link_color: #3C2322;
-
-// アクセントカラー（サーモンピンク）
-$accent_color: #CC766E;
+$link_color: #82927D;
 
 // ベースカラー（リネン）
-$bg_color: #FAF6F0;
-
-$gray_color: #707070;
+$bg_color: #F7F1EB;
 $white_color: #FFFFFF;
-
-// テキストカラー
-$font_color: #404041;
 
 // size
 $container_max:980px;
-$sp_max: 768px;
-$pc_min: 769px;
+$pc_min: 768px;

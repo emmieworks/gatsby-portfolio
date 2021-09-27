@@ -1,0 +1,40 @@
+@charset "UTF-8";
+@import 'setting';
+
+.contact{
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  color: $white_color;
+  position: relative;
+
+  h2{
+    color: $white_color;
+    &:after{
+      content: "";
+      display: block;
+      margin: 0.2rem auto;
+      width:60px;
+      height: 1px;
+      background: $white_color;
+    }
+  }
+  p{
+    padding: 1rem 0;
+  }
+  .btn{
+    border:1px solid $white_color;
+    color: $white_color;
+  }
+  .container{
+    z-index: 10;
+    position: relative;
+    text-align: center;
+  }
+  .back{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+}

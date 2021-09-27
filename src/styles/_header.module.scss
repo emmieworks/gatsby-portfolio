@@ -2,11 +2,13 @@
 @import 'setting';
 
 header{
-  background: $white_color;
-  border-bottom: 2px solid $main_light_color;
+  border-top: 2px solid $main_color;
+  padding: 0.5rem 0;
   @media screen and (min-width: $pc_min) {
-      display:grid;
-      grid-template-columns:30% 1fr;
+    background: $main_color;
+    height: 60px;
+    display:grid;
+    grid-template-columns:10% 1fr;
   }
   nav{
     display: none;
@@ -14,24 +16,26 @@ header{
       display: block;
       margin: 0 auto;
       ul{
-        text-align: center;
+        display: flex;
+        justify-content: space-between;
         li{
-          font-family: 'Montserrat', sans-serif;
           text-transform: uppercase;
-          padding: 0.5rem 0;
+          padding: 0.5rem 2rem;
+          a{
+            color: $white_color;
+          }
         }
       }
     }
   }
 }
 
-
-
-.side{
-  margin: 0.5rem auto;
-  @media screen and (min-width: $pc_min) {
-    margin-top: 2rem;
-  }
+.back{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
 
 .logo{
@@ -39,29 +43,10 @@ header{
   display: block;
   width: 40px;
   height: 40px;
+  z-index: 10;
   @media screen and (min-width: $pc_min) {
+    margin-left: 2rem;
     width: 100px;
     height: 100px;
-  }
-}
-
-.bar{
-  display: none;
-  @media screen and (min-width: $pc_min) {
-    display: block;
-    background-color: $main_light_color;
-    width: 30px;
-    height: 1px;
-    margin: 1.5rem auto;
-  }
-}
-
-.subtitle{
-  display: none; 
-  @media screen and (min-width: $pc_min) {
-    display: block;
-    color: $main_color;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 0.6rem;
   }
 }

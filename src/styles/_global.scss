@@ -1,22 +1,64 @@
 @charset "UTF-8";
 @import 'setting';
 body{
-  font-family: 'Noto Sans JP', sans-serif;
+  font-family: 'Montserrat', 'Noto Sans JP', sans-serif;
   font-weight: 100;
-  line-height: 2;
+  line-height: 1.8;
   background-color: $white_color;
   color: $font_color;
 }
 a{
-  color: $main_color;
+  color: $link_color;
   text-decoration: none;
 }
 p{
   padding: 1rem 0;
 }
-.bar{
-  background-color: $main_light_color;
-  width: 90px;
-  height: 1px;
-  margin: 2rem auto 0 auto;
+
+
+.container{
+  margin: 0 auto;
+  max-width: 95%;
+
+  @media screen and (min-width: $pc_min) {
+    margin: 0 auto;
+    width: $container_max;
+  }
+}
+
+section{
+  padding: 4rem 0;
+  @media screen and (min-width: $pc_min) {
+    padding: 6rem 0;
+  }
+}
+
+h2{
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 2.5rem;
+  margin: 2rem auto;
+  color: $main_color;
+  text-align: center;
+}
+
+
+h3{
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 2rem;
+  line-height: 1.5;
+}
+
+.title{
+  div{
+    &:before{
+      content:"";
+      display: block;
+      background-color: $main_color;
+      width: 60px;
+      height: 1px;
+      margin: 0.1rem auto 0.5rem auto;
+    }
+    font-size: 0.4em;
+    font-family: 'Noto Sans JP', sans-serif;
+  }
 }

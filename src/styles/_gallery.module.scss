@@ -1,0 +1,13 @@
+@charset "UTF-8";
+@import 'setting';
+
+.container{
+  margin: 4rem auto;
+  display:grid;
+  grid-template-columns:1fr;
+  grid-gap: 3rem;
+  @media screen and (min-width: $pc_min) {
+    grid-template-columns:1fr 1fr 1fr;
+    grid-gap: 1rem;
+  }
+}
