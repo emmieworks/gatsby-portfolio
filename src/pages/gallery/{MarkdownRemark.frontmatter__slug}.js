@@ -11,11 +11,13 @@ const PostTemplate = ({data}) => {
     <Layout>
     <article style={{margin: `4rem auto`}}>
       <div className={`container ${styles.post}`}>
+        <div style={{margin: `0 auto`, textAlign:`center`}}>
         {frontmatter.featured && (
           <GatsbyImage
             image={frontmatter.featured.childImageSharp.gatsbyImageData}
             alt={frontmatter.title} />
         )}
+        </div>
         <dl style={{marginTop: `4rem`}}>
           <dt>タイトル</dt>
           <dd>{frontmatter.title}</dd>
@@ -61,7 +63,7 @@ export const pageQuery = graphql`
         scope
         featured {
           childImageSharp {
-            gatsbyImageData(layout: CONSTRAINED)
+            gatsbyImageData(width: 800, height:800, layout: CONSTRAINED)
           }
         }
       }
