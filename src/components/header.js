@@ -13,7 +13,7 @@ const Header = ({ siteTitle }) => (
         <li><Link to ="/gallery">Gallery</Link></li>
         <li><Link to ="/service/">Service</Link></li>
         <li><Link to ="/about/">About</Link></li>
-        <li><a href="https://0forest.com/contact/">Contact</a></li>
+        <li><a href="https://forms.gle/cud8zcZfHHE91Y2R8">Contact</a></li>
       </ul>
     </nav>
   </header>
