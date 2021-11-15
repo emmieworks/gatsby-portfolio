@@ -1,6 +1,6 @@
 ---
-title: 私のWordPressブログ
-date: 2021-09-26
+title: WordPress個人ブログ
+date: 2017-09-26
 category: WordPressブログサイト
 tool: WordPress
 url: https://0forest.com/
