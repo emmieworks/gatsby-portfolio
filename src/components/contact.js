@@ -9,7 +9,7 @@ const Contact = () => {
       <div className={styles.container}>
         <h2>Contact</h2>
         <p style={{padding: `1rem`}}>お仕事のご相談・ご依頼はお問い合わせフォームからどうぞ</p>
-        <a href="https://forms.gle/cud8zcZfHHE91Y2R8" className={`${button.btn} ${button.white}`}>お問い合わせ</a>
+        <a href="https://0forest.com/service-contact/" className={`${button.btn} ${button.white}`}>お問い合わせ</a>
       </div>
       <div className={styles.back}>
         <StaticImage
