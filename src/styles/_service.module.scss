@@ -59,12 +59,15 @@ section{
 
 
 .price{
-  dl{
-    border-top: 1px solid $second_light_color;
-    padding: 0.5rem;
+  h3{
+    color: $main_color;
+    font-size: 1.2rem;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
   }
-  dl:last-of-type{
-    border-bottom: 1px solid $second_light_color;
+  dl{
+    border-bottom: 1px dashed $second_light_color;
+    padding: 0.5rem;
   }
   dt{
     color: $second_color;
@@ -168,7 +171,7 @@ section{
   }
   dt{
     color: $second_color;
-    border-bottom: 1px solid $second_light_color;
+    border-bottom: 1px dashed $second_light_color;
   }
   dd{
     font-size: 0.9em;
