@@ -70,7 +70,7 @@ const Service = () => {
       </section>
 
       <section className={styles.price}>
-        <h2 className="title">Price<div>価格の目安</div></h2>
+        <h2 className="title">Price<div>価格</div></h2>
         <div className="container">
           <h3>追加オプション</h3>
           <dl>
