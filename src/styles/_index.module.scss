@@ -122,22 +122,22 @@ section{
       content: "";
       display: block;
       margin: 1rem auto;
-      width:60px;
+      width: 60px;
       height: 1px;
-      background: $bg_color;
+      background: $main_color;
     }
   }
   color: $main_color;
   div.right{
-    padding: 1rem;
+    padding: 1.5rem;
     background: $bg_color;
     font-size: 0.9rem;
   }
   p.en{
     font-family: 'Ephesis', cursive;
-    font-size: 4em;
+    font-size: 3em;
     padding: 2rem auto;
-    transform: rotate(-10deg);
+    transform: rotate(-8deg);
     @media screen and (min-width: $pc_min) {
       margin-left: -3rem;
     }
