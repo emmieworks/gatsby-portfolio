@@ -7,13 +7,12 @@ import * as styles from "../styles/_footer.module.scss"
 const Footer = ({ siteTitle }) => (
   <footer>
     <img src={logo} alt={siteTitle} width={100} height={100}/>
-    <div className={styles.bar}></div>
     <nav>
       <ul>
         <li><Link to ="/">Top</Link></li>
-        <li><Link to ="/about/">About</Link></li>
-        <li><Link to ="/service/">Service</Link></li>
-        <li><Link to ="/gallery/">Gallery</Link></li>
+        <li><a href="/#about">About</a></li>
+        <li><a href="/#service">Service</a></li>
+        <li><a href="/#gallery">Gallery</a></li>
         <li><a href="https://0forest.com/service-contact/" target="_blank" rel="noreferrer">Contact</a></li>
       </ul>
     </nav>

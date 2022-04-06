@@ -9,10 +9,10 @@ const Header = ({ siteTitle }) => (
     <h1><Link to ="/"><img src={logo} alt={siteTitle} className={styles.logo} /></Link></h1>
     <nav>
       <ul>
-        <li><Link to ="/">Top</Link></li>
-        <li><Link to ="/about/">About</Link></li>
-        <li><Link to ="/service/">Service</Link></li>
-        <li><Link to ="/gallery">Gallery</Link></li>
+        <li><Link to="/">Top</Link></li>
+        <li><a href="/#service">Service</a></li>
+        <li><a href="/#about">About</a></li>
+        <li><a href="/#gallery">Gallery</a></li>
         <li><a href="https://0forest.com/service-contact/" target="_blank" rel="noreferrer">Contact</a></li>
       </ul>
     </nav>
