@@ -8,5 +8,3 @@ scope: 企画・デザイン・コーディング
 featured: icatch.png
 slug: work04
 ---
-
-GatsbyJSでポートフォリオサイトを制作しました。
