@@ -1,6 +1,6 @@
 import * as React from 'react'
 import { useStaticQuery, graphql } from "gatsby"
-import {FaPinterest, FaGithub, FaTwitter, FaInstagram } from "react-icons/fa"
+import {FaPinterest, FaTwitter, FaInstagram } from "react-icons/fa"
 
 const Sns = () => {
   const data = useStaticQuery(graphql`
@@ -27,7 +27,7 @@ const Sns = () => {
           target="_blank"
           rel="noopener noreferrer"
           >
-          <FaTwitter />
+          <FaTwitter size={24} />
         </a>
         <a
           style={{marginRight:10}}
@@ -35,7 +35,7 @@ const Sns = () => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <FaInstagram />
+          <FaInstagram size={24} />
         </a>
         <a
           style={{marginRight:10}}
@@ -43,15 +43,7 @@ const Sns = () => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <FaPinterest />
-        </a>
-        <a
-          style={{marginRight:10}}
-          href={`https://github.com/${social.github}`}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <FaGithub />
+          <FaPinterest size={24}/>
         </a>
       </p>
     </div>
