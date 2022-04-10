@@ -8,7 +8,8 @@ const Contact = () => {
     <section id="contact" className={styles.contact}>
       <div className={styles.container}>
         <h2>Contact</h2>
-        <p style={{padding: `1rem`}}>お仕事のご相談・ご依頼はお問い合わせフォームからどうぞ</p>
+        <p style={{padding: `1rem`}}>お仕事のご相談・ご依頼は、お気軽にお問い合わせフォームからご連絡ください。<br />
+        初めてのお客様は、まずは60分の無料相談でお話を伺っております。</p>
         <a href="https://0forest.com/service-contact/" className={`${button.btn} ${button.white}`}>お問い合わせ</a>
       </div>
       <div className={styles.back}>
