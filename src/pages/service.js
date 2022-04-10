@@ -3,33 +3,75 @@ import { StaticImage } from "gatsby-plugin-image"
 import Layout from '../components/layout'
 import Seo from "../components/seo"
 import Contact from "../components/contact"
-import { GoGraph, GoFileMedia, GoDatabase } from "react-icons/go";
 import * as styles from "../styles/_service.module.scss"
 
 
 const Service = () => {
   return (
     <Layout>
-      <Seo title="Service" />
+      <Seo title="Web Design" />
       <section className={styles.service}>
         <h2 className="title">Service<div>サービス</div></h2>
         <div className={`container ${styles.container}`}>
-          <div id="service01" className={styles.img01}>
-            <StaticImage
-              src="../images/service01.jpg"
-              alt="Web Development"
-              placeholder="blurred"
-              width={480}
-              layout="constrained"
-              style={{margin: `0 auto`}}
-            />
+          <p style={{marginTop:60,textAlign:`center`, fontSize: `1.1em`}}>
+          「活動を知ってもらうために、新しくホームページを作りたい」<br/>
+          「お申込みを受け付けるホームページがほしい」<br/>
+          「今あるホームページをお洒落なデザインにリニューアルしたい」</p>
+          <p>個人事業主さま、中小企業さまに向けて、WordPressを使ったホームページ・ブログの作成をしています。</p>
+          <p>女性エンジニアならではの、優しいデザインと、確かな技術力で、あなたの活動を支えるホームページを一緒に作っていきます。</p>
+
+          <p>WordPressとは？<br/>
+          ホームページを作成・更新できるソフトです。</p>
+          <div className={`${styles.recommand}`}>
+            <h3>こんな方におすすめです</h3>
+            <ul>
+              <li>おしゃれなデザインのホームページを作りたい</li>
+              <li>自分でホームページを更新していきたい</li>
+              <li>ブログ・オウンドメディアを持ちたい</li>
+              <li>今あるホームページをリニューアルしたい</li>
+            </ul>
           </div>
-          <div className={styles.desc01}>
-            <h3>Web Design<div>ホームページ制作</div></h3>
-            <p>これからホームページをはじめるために、必要なものを丸ごとセットにしました。
-            WordPressを使用しますので、ビジネスサイト、ブログ、LPなど、ご希望の用途に合わせてお使いいただけます。</p>
-            <p>価格　330,000円 (税込)<br/>
-            <div style={{fontSize: `0.8rem`}}>※ドメイン・サーバー代は含まれません。</div></p>
+        </div>
+      </section>
+      <section className={styles.feature}>
+        <h2 className="title">Features<div>ホームページ制作の特徴</div></h2>
+        <div className={`container ${styles.container}`}>
+          <ol>
+            <li>
+              <div>確かな技術でお客さまに合った仕組みを提案</div>
+              ホームページはビジネス活動を下支えするもの。<br />
+              システムエンジニア・コンサルタントタントだった経験を活かし、お客さまのビジネスの全体像を把握します。<br/>
+              その上で、SNS活用や集客から申込みまでの導線など、最適なホームページの仕組みをご提案します。
+            </li>
+            <li>
+              <div>魅力が伝わるコンセプト設計</div>
+              ホームページはご自身のサービスや商品を深く見つめていく時間です。<br/>
+              まずは、お仕事への想い・届けたい相手をじっくりと掘り下げて、伝えたいメッセージ、強み、必要なコンテンツなどを整理します。<br/>
+              お客さまにしっかり届き、共感されるようなホームページの構成を一緒に考えましょう。
+            </li>
+            <li>
+              <div>ホームページを始めるために必要なものを丸ごと。</div>
+              基本プランには、4ページ＋ブログ＋お申込みフォームが含まれており、はじめてのホームページには充分。<br/>
+              また、スマホ対応、SEO対策、セキュリティ対策などホームページを始めるために必要な設定もしっかり行います。</li>
+            <li>
+              <div>ご自身でホームページを運営できるようサポート</div>
+              ホームページは作って終わりではなく、育てていくことを大切にしています。<br/>
+              WordPressの操作レクチャーやメンテナンスなど、お客様自身でホームページを運営できるようサポートしていきます。
+            </li>
+            <li>
+              <div>オンラインミーティングで、丁寧にコミュニケーション</div>
+              ミーティングはオンライン（Zoom, Google Meet）で行いますので、全国どこからでもご依頼いただけます。<br/>
+              デザインのイメージが固まっていなくても大丈夫。いろいろなアイデアを出し合いながら、一緒にイメージを形にしていきましょう。
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <section className={styles.price}>
+        <h2 className="title">Price<div>価格</div></h2>
+        <div className="container">
+          <div className={styles.plan}>
+            <h3>基本プランに含まれるもの</h3>
             <ul>
               <li>トップページ</li>
               <li>下層ページ（3ページまで）</li>
@@ -43,78 +85,10 @@ const Service = () => {
               <li>操作レクチャー</li>
             </ul>
           </div>
-          <div id="service02" className={styles.img02}>
-            <StaticImage
-              src="../images/service02.jpg"
-              alt="Consulting"
-              placeholder="blurred"
-              width={480}
-              layout="constrained"
-              style={{margin: `0 auto`}}
-            />
-          </div>
-          <div className={styles.desc02}>
-            <h3>Lesson<div>個別レッスン</div></h3>
-            <p>WordPressを使ったホームページを作成・運営するためのオンラインレッスンです。
-            4日間のレッスンを通じて、ご自分の手でオリジナルのホームページを作成できます。</p>
-            <p>価格 88,000円(税込) / 2時間×4日間</p>
-            <ul>
-              <li>HPのコンセプトづくり</li>
-              <li>WordPressのインストール・初期設定</li>
-              <li>テーマ選び、デザインの設定</li>
-              <li>ページの作成</li>
-              <li>お問い合わせフォームの作成</li>
-              <li>ブログの投稿</li>
-            </ul>
-          </div>
-        </div>
-      </section>
 
-      <section className={styles.price}>
-        <h2 className="title">Price<div>価格</div></h2>
-        <div className="container">
-          <h3>追加オプション</h3>
-          <dl>
-            <dt>ページ追加</dt>
-            <dd>20,000円 / 1ページあたり</dd>
-          </dl>
-          <dl>
-            <dt>会員サイトなど機能追加</dt>
-            <dd>20,000円〜 (都度お見積り)</dd>
-          </dl>
-          <dl>
-            <dt>既存のサイトのリニューアル</dt>
-            <dd>都度お見積り</dd>
-          </dl>
-          <h3>保守・更新費用</h3>
-          <dl>
-            <dt>ページ内文言変更・画像差し替え</dt>
-            <dd>1,000円 / 1ページ</dd>
-          </dl>
-          <dl>
-            <dt>上記以外の修正</dt>
-            <dd>修正内容により都度お見積もり</dd>
-          </dl>
-          <dl>
-            <dt>ページ新規作成</dt>
-            <dd>20,000円 / 1ページ</dd>
-          </dl>
-          <dl>
-            <dt>メンテナンス（データのバックアップ、最新バージョンのアップデート）</dt>
-            <dd>5,000円</dd>
-          </dl>
-          <dl>
-            <dt>サーバー移転・ドメイン変更</dt>
-            <dd>都度お見積り</dd>
-          </dl>
-          <dl>
-            <dt>操作レクチャー・運営相談</dt>
-            <dd>5,000円 / 1時間</dd>
-          </dl>
-          <div style={{fontSize: `0.8rem`, textAlign:`right`, margin: `5px 0`}}>
-          ※価格はすべて税抜き表示です。<br />
-          ※価格は予告なく変更する場合がありますのでご了承ください。
-          </div>
+          <p>価格　330,000円 (税込)</p>
+          <div style={{fontSize: `0.9rem`}}>※ホームページの運営には、別途ドメイン・サーバー代（年間15,000円程度）が発生します。</div>
+          <div style={{fontSize: `0.9rem`}}>※ページ数が増える場合など、基本プラン内におさまらない場合には、ヒアリング時にお伝えして、お見積りさせていただきます。</div>
         </div>
 
       </section>
@@ -122,81 +96,15 @@ const Service = () => {
       <section className={styles.process}>
         <h2 className="title">Process<div>ホームページ制作の流れ</div></h2>
         <div className={`container ${styles.container}`}>
-          <ol>
-              <li>
-                <div>お問い合わせ</div>
-                お問い合わせフォームからご連絡ください。
-              </li>
-              <li>
-                <div>ヒアリング</div>
-                まずは60分の無料相談を承っております。<br />
-                ホームページ作成の流れについてご説明し、ご要望をヒアリングさせていただきます。<br />
-                現在お悩みのことや、ホームページでやりたいことなど、くわしくお話を聞かせてください。あなたに合った内容を一緒に考えましょう。
-              </li>
-              <li>
-                <div> 企画提案・お見積り</div>
-                ヒアリングを元に、ホームページへのご提案と概算のお見積もりを提出いたします。ご予算に合わない場合は、ご予算内で最大限できることを ご提案いたします。
-              </li>
-              <li>
-                <div>正式なご依頼</div>
-                サービスの詳細や料金にご納得いただけましたら、ご依頼ください。<br />
-                これ以降の作業には、料金が発生します。
-              </li>
-              <li>
-                <div>原稿の作成・素材の準備</div>
-                ホームページで使う、原稿や素材をご準備いただきます。
-              </li>
-              <li>
-                <div>デザイン</div>
-                原稿・素材が揃いましたら、ページレイアウトやデザインを検討いたします。< br />
-                ※デザインの修正は、2回まで承っております。
-              </li>
-              <li>
-                <div>コーディング</div>
-                デザインを元に、Webページのコーディング・WordPressのセットアップを行います。
-              </li>
-              <li>
-                <div>チェック・修正</div>
-                Webページ上で、表示内容や動作をご確認いただきます。
-              </li>
-              <li>
-                <div>公開</div>
-                お客様のサーバーにデータをアップロードして納品とさせていただきます。<br/>
-                WordPressの使い方や更新方法などをご説明させていただきます。
-              </li>
-          </ol>
-        </div>
-      </section>
-
-      <section className={`container ${styles.notice}`}>
-        <h2>対応が難しい作業</h2>
-        <div className={styles.container}>
-          <div>
-            <div style={{textAlign:`center`}}>
-              <GoGraph size="3rem" />
-            </div>
-            <h3>マーケティング</h3>
-            <p>商品・サービスのマーケティング戦略については、専門外のため、事前にお客さまの方でご検討ください。お客さまのやりたいことに対して、Webをどう活用できるか、技術的な側面でサポートをさせていただきます。</p>
-          </div>
-          <div>
-            <div style={{textAlign:`center`}}>
-              <GoDatabase size="3rem" />
-            </div>
-            <h3>サーバーの構築・運用管理</h3>
-            <p>
-              サーバー・ドメインの紐付け、WordPressのインストールなど、基本的なセットアップは対応できます。個人で活動しているため、サーバーの運用管理などは業務としての対応が難しい範囲です。新規にホームページを立ち上げる場合には、用途に合わせてサーバー会社の活用をご提案しております。
-            </p>
-          </div>
-          <div>
-            <div style={{textAlign:`center`}}>
-              <GoFileMedia size="3rem" />
-            </div>
-            <h3>原稿・写真など素材の作成</h3>
-            <p>
-              ホームページに掲載する文章や、写真などの素材は、お客様の思いを反映する要のコンテンツですので、ご自身でご用意いただいております。
-              写真など素材については、画像／写真素材を購入したり、イメージをお伺いしながらこちらでも作成できることがありますので、ご相談ください。
-            </p>
-          </div>
+        <p style={{textAlign:`center`}}>初めてのお客様は、まずは60分の無料相談でお話を伺っております。<br/>
+        <a href="https://0forest.com/service-contact/" target="_blank" rel="noreferrer">お申し込みフォーム</a>よりご連絡ください。</p>
+        <StaticImage
+          src="../images/web-flow.jpg"
+          alt="Web Development"
+          placeholder="blurred"
+          layout="constrained"
+          style={{margin: `0 auto`}}
+        />
         </div>
       </section>
 
