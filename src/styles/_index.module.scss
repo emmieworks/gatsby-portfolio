@@ -129,15 +129,14 @@ section{
   }
   color: $main_color;
   div.right{
-    padding: 1.5rem;
+    padding: 1rem;
     background: $bg_color;
     font-size: 0.9rem;
   }
   p.en{
     font-family: 'Ephesis', cursive;
     font-size: 3em;
-    padding: 2rem auto;
-    transform: rotate(-8deg);
+    transform: rotate(-5deg);
     @media screen and (min-width: $pc_min) {
       margin-left: -3rem;
     }

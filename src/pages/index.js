@@ -14,23 +14,24 @@ const IndexPage = ({data}) => {
   const posts = data.allMarkdownRemark.edges
   return (
   <Layout>
-    <Seo title="Home" />
+    <Seo title="Portfolio" />
 
     <section id="hero" className={styles.hero}>
     <div className={`container ${styles.container}`}>
-        <p>Zero Forest</p>
-        <p>女性起業家・中小企業向けのホームページ作成</p>
+        <p>優しいデザインと技術力で<br />
+        思いをカタチにするホームページを作成</p>
     </div>
     </section>
 
     <section id="service" className={styles.service}>
       <h2 className="title">Service<div>サービス</div></h2>
       <div style={{textAlign:`center`, margin:`4rem auto`, padding:`0 1rem`, fontSize:`0.9em`}}>
-      WordPressを使用したホームページ制作やLP制作<br />
-      あなたの活動をWebの力でサポートします。
+      女性起業家さんや中小企業さん向けに、目的に叶うホームページ・ブログを一緒に作っていきます。<br />
+      また、ご自分でホームページを作りたい方に「WordPress個人レッスン」を提供しています。<br/>
+      お仕事への想いに丁寧によりそい、Webの力で活動をサポートします。
       </div>
       <div className={`container ${styles.container}`}>
-        <Link to="/service#service01/" className={styles.item}>
+        <Link to="/service/" className={styles.item}>
           <StaticImage
             src="../images/service01.jpg"
             alt="Web Development"
@@ -41,7 +42,7 @@ const IndexPage = ({data}) => {
           />
             <h3 className="title">Web Design<div>ホームページ制作</div></h3>
         </Link>
-        <Link to="/service#service02/" className={styles.item}>
+        <Link to="/lesson/" className={styles.item}>
           <StaticImage
             src="../images/service02.jpg"
             alt="Consulting"
@@ -50,13 +51,13 @@ const IndexPage = ({data}) => {
             layout="constrained"
             style={{margin: `0 auto`}}
           />
-          <h3 className="title">Lesson<div>オンライン個人レッスン</div></h3>
+          <h3 className="title">Lesson<div>個人レッスン</div></h3>
         </Link>
       </div>
     </section>
 
     <section id="gallery" className={styles.gallery}>
-      <h2 id="gallery" className="title">Gallery<div>制作実績</div></h2>
+      <h2 id="gallery" className="title">Gallery<div>制作事例</div></h2>
       <div className={`container ${styles.container}`}>
           {posts.map(({ node }) => {
             return <PostCard key={node.frontmatter.slug} node={node} />;
@@ -80,9 +81,9 @@ const IndexPage = ({data}) => {
       <div className={styles.right}>
         <p className={styles.en}>About Me</p>
         <p>東京を拠点に活動しているフリーランスのWebエンジニアのエミです。</p>
-        <p>女性の個人事業主さん向けにホームページ作成レッスンをしたり、
-        中小企業さん向けのホームページ作成、WEB周りの相談にのっています。</p>
-        <p>気軽に相談できるWEB担当のような存在になりたいです。</p>
+        <p>元システムエンジニア・コンサルタントの経験を生かして、お客さまのお悩みを整理して解決へ導くことが得意です。
+        お客さまの思いやビジョンに丁寧に優しく寄りそい、培ってきた技術と経験で目的に叶う仕組みを提案します。</p>
+        <p>「何からはじめたら良いかわからない」など、イメージが固まっていなくても大丈夫。お気軽にご相談ください。</p>
         <a href="https://0forest.com/about/" rel="noreferrer" className={button.btn}>プロフィール</a>
         <a href="https://0forest.com" rel="noreferrer" className={button.btn}>ブログ</a>
       </div>
