@@ -1,0 +1,128 @@
+@charset "UTF-8";
+@import 'setting';
+
+.profile{
+  padding: 0;
+  display:grid;
+  grid-template-columns:1fr;
+  align-items: center;
+  @media screen and (min-width: $pc_min) {
+    grid-template-columns:1fr 1fr;
+  }
+  div.left{
+    text-align: center;
+  }
+  h3{
+    color: $main_color;
+    font-size: 1.6rem;
+    &:after{
+      content: "";
+      display: block;
+      margin: 1rem auto;
+      width:60px;
+      height: 1px;
+      background: $bg_color;
+    }
+  }
+  color: $main_color;
+  div.right{
+    padding: 1rem;
+    background: $bg_color;
+    font-size: 0.9rem;
+  }
+  p.en{
+    font-family: 'Ephesis', cursive;
+    font-size: 4em;
+    padding: 2rem auto;
+    transform: rotate(-10deg);
+    @media screen and (min-width: $pc_min) {
+      margin-left: -3rem;
+    }
+  }
+}
+
+.skill{
+  border-top: 1px solid $main_color;
+  border-bottom: 1px solid $main_color;
+  margin: 0.5rem 0;
+
+  .container{
+    display:grid;
+    grid-template-columns:1fr;
+    grid-gap: 3rem;
+    @media screen and (min-width: $pc_min) {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      grid-gap: 1rem;
+      grid-auto-flow: column;
+      align-items: center;
+    }
+
+  }
+
+  h3{
+    color: $main_color;
+  }
+  dl{
+    border-top: 1px solid $second_light_color;
+    padding: 0.5rem;
+  }
+  dl:last-of-type{
+    border-bottom: 1px solid $second_light_color;
+  }
+  dt{
+    color: $second_color;
+  }
+  @media screen and (min-width: $pc_min) {
+    dt{
+      float: left;
+      width: 10%;
+    }
+    dd{
+      margin-left: 12%;
+    }
+  }
+}
+
+
+.history{
+  background: $main_light_color;
+  font-size: 0.8rem;
+  .container{
+    background: $white_color;
+  }
+}
+
+.timeline {
+  list-style: none;
+  margin: 2rem 1rem;
+  padding: 1rem 0;
+
+  @media ( min-width : $pc_min ){
+    padding: 2rem 1rem 2rem 2rem;
+  }
+}
+
+.timeline > li {
+  border-left: 1px $main_light_color solid;
+  padding: 30px 40px;
+  position: relative;
+  &:before {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    margin-top: 8px;
+    margin-left: -47px;
+    border-radius: 100%;
+    background: $main_color;
+  }
+}
+/* for Desktop */
+@media ( min-width : $pc_min ){
+  .timeline > li {
+    padding: 30px 40px;
+  }
+}

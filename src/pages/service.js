@@ -93,7 +93,7 @@ const Service = () => {
 
       </section>
 
-      <section className={styles.process}>
+      <section>
         <h2 className="title">Process<div>ホームページ制作の流れ</div></h2>
         <div className={`container ${styles.container}`}>
         <p style={{textAlign:`center`}}>初めてのお客様は、まずは60分の無料相談でお話を伺っております。<br/>

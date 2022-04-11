@@ -84,7 +84,7 @@ const IndexPage = ({data}) => {
         <p>元システムエンジニア・コンサルタントの経験を生かして、お客さまのお悩みを整理して解決へ導くことが得意です。
         お客さまの思いやビジョンに優しく寄りそい、培ってきた技術と経験で目的に叶うホームページを提案します。</p>
         <p>「何からはじめたら良いかわからない」など、イメージが固まっていなくても大丈夫。お気軽にご相談ください。</p>
-        <a href="https://0forest.com/about/" rel="noreferrer" className={button.btn}>プロフィール</a>
+        <Link to="/about/" className={button.btn}>プロフィール</Link>
         <a href="https://0forest.com" rel="noreferrer" className={button.btn}>ブログ</a>
       </div>
     </section>
