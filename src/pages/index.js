@@ -19,7 +19,7 @@ const IndexPage = ({data}) => {
     <section id="hero" className={styles.hero}>
     <div className={`container ${styles.container}`}>
         <p>優しいデザインと技術力で<br />
-        思いをカタチにするホームページを作成</p>
+        思いをカタチにするホームページ作成</p>
     </div>
     </section>
 
@@ -82,7 +82,7 @@ const IndexPage = ({data}) => {
         <p className={styles.en}>About Me</p>
         <p>東京を拠点に活動しているフリーランスのWebエンジニアのエミです。</p>
         <p>元システムエンジニア・コンサルタントの経験を生かして、お客さまのお悩みを整理して解決へ導くことが得意です。
-        お客さまの思いやビジョンに丁寧に優しく寄りそい、培ってきた技術と経験で目的に叶う仕組みを提案します。</p>
+        お客さまの思いやビジョンに優しく寄りそい、培ってきた技術と経験で目的に叶うホームページを提案します。</p>
         <p>「何からはじめたら良いかわからない」など、イメージが固まっていなくても大丈夫。お気軽にご相談ください。</p>
         <a href="https://0forest.com/about/" rel="noreferrer" className={button.btn}>プロフィール</a>
         <a href="https://0forest.com" rel="noreferrer" className={button.btn}>ブログ</a>
