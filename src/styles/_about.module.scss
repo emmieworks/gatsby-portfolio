@@ -21,7 +21,7 @@
       margin: 1rem auto;
       width:60px;
       height: 1px;
-      background: $bg_color;
+      background: $main_color;
     }
   }
   color: $main_color;
@@ -39,17 +39,47 @@
       margin-left: -3rem;
     }
   }
+  padding-bottom: 10px;
+  border-bottom: 1px solid $main_color;
+}
+
+.policy{
+  background: $main_color;
+  margin-top: 0.5rem;
+  h2{
+    color: $white_color;
+    div:before{
+      background-color: $white_color;
+    }
+  }
+  .container{
+    background-color: $white_color;
+    @media screen and (min-width: $pc_min) {
+      padding: 4rem;
+    }
+  }
+  h3{
+    font-family: 'Montserrat', 'Noto Sans JP', sans-serif;
+    font-weight: 120;
+    color: $main_color;
+    font-size: 1.1em;
+    border-bottom: 1px solid $main_light_color;
+  }
+
 }
 
 .skill{
+  margin-top: 0.5rem;
   border-top: 1px solid $main_color;
-  border-bottom: 1px solid $main_color;
-  margin: 0.5rem 0;
+  .icon{
+    color: $main_light_color;
+    margin: 0 auto;
+  }
 
-  .container{
+  .grid{
     display:grid;
     grid-template-columns:1fr;
-    grid-gap: 3rem;
+    grid-gap: 1rem;
     @media screen and (min-width: $pc_min) {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
@@ -58,18 +88,16 @@
       grid-auto-flow: column;
       align-items: center;
     }
-
   }
-
   h3{
     color: $main_color;
   }
   dl{
-    border-top: 1px solid $second_light_color;
+    border-top: 1px solid $second_color;
     padding: 0.5rem;
   }
   dl:last-of-type{
-    border-bottom: 1px solid $second_light_color;
+    border-bottom: 1px solid $second_color;
   }
   dt{
     color: $second_color;
@@ -85,6 +113,47 @@
   }
 }
 
+.notice{
+  margin-bottom: 0.5rem;
+  border-bottom: 1px solid $main_color;
+  .container{
+    border: 1px solid $main_color;
+    padding: 2rem;
+  }
+  h2{
+    font-family: 'Montserrat', 'Noto Sans JP', sans-serif;
+    background-color: $white_color;
+    font-size: 1.4rem;
+    margin-top: -3.2rem;
+
+    display: block;
+    width: 220px;
+  }
+  .grid{
+    margin: 2rem auto;
+    display:grid;
+    grid-template-columns:1fr;
+    grid-gap: 3rem;
+    @media screen and (min-width: $pc_min) {
+      grid-template-columns:1fr 1fr 1fr;
+      grid-gap: 1rem;
+    }
+  }
+
+  // icon color
+  color: $main_light_color;
+
+  h3{
+    font-family: 'Montserrat', 'Noto Sans JP', sans-serif;
+    color: $main_color;
+    margin: 1rem 0;
+    font-size: 1.2rem;
+  }
+  p{
+    font-size: 0.8rem;
+    color: $font_color;
+  }
+}
 
 .history{
   background: $main_light_color;
@@ -106,7 +175,7 @@
 
 .timeline > li {
   border-left: 1px $main_light_color solid;
-  padding: 30px 40px;
+  padding: 20px 40px;
   position: relative;
   &:before {
     content: '';
@@ -123,6 +192,6 @@
 /* for Desktop */
 @media ( min-width : $pc_min ){
   .timeline > li {
-    padding: 30px 40px;
+    padding: 20px 40px;
   }
 }
