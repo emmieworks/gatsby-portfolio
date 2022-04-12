@@ -19,7 +19,7 @@ const IndexPage = ({data}) => {
     <section id="hero" className={styles.hero}>
     <div className={`container ${styles.container}`}>
         <p>優しいデザインと技術力で<br />
-        思いをカタチにするホームページ作成</p>
+        思いをカタチにするホームページ</p>
     </div>
     </section>
 
@@ -27,7 +27,7 @@ const IndexPage = ({data}) => {
       <h2 className="title">Service<div>サービス</div></h2>
       <div style={{textAlign:`center`, margin:`4rem auto`, padding:`0 1rem`, fontSize:`0.9em`}}>
       女性起業家さんや中小企業さん向けに、目的に叶うホームページ・ブログを一緒に作っていきます。<br />
-      また、ご自分でホームページを作りたい方に「WordPress個人レッスン」を提供しています。<br/>
+      また、ご自身でホームページを作りたい方に「WordPress個人レッスン」を提供しています。<br/>
       お仕事への想いに丁寧によりそい、Webの力で活動をサポートします。
       </div>
       <div className={`container ${styles.container}`}>
@@ -62,6 +62,9 @@ const IndexPage = ({data}) => {
           {posts.map(({ node }) => {
             return <PostCard key={node.frontmatter.slug} node={node} />;
           })}
+      </div>
+      <div style={{textAlign:`center`, margin:`2rem auto`}}>
+        <Link to ="/gallery/" className={button.btn}>もっと見る</Link>
       </div>
     </section>
 
@@ -98,7 +101,7 @@ export const pageQuery = graphql`
 {
   allMarkdownRemark(
       sort: {fields: [frontmatter___date], order: DESC},
-      limit: 9,
+      limit: 6,
     ) {
     edges {
       node {
