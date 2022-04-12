@@ -9,7 +9,7 @@ import * as styles from "../styles/_service.module.scss"
 const Service = () => {
   return (
     <Layout>
-      <Seo title="Web Design" />
+      <Seo title="WordPressホームページ制作" />
       <section className={styles.service}>
         <h2 className="title">Service<div>サービス</div></h2>
         <div className={`container ${styles.container}`}>
@@ -58,14 +58,14 @@ const Service = () => {
             <li>
               <div>オンラインミーティングで、丁寧にコミュニケーション</div>
               ミーティングはオンライン（Zoom, Google Meet）で行いますので、全国どこからでもご依頼いただけます。<br/>
-              デザインのイメージが固まっていなくても大丈夫。いろいろなアイデアを出し合いながら、一緒にイメージを形にしていきましょう。
+              ホームページのイメージが固まっていなくても大丈夫。いろいろなアイデアを出し合いながら、一緒に形にしていきましょう。
             </li>
           </ol>
         </div>
       </section>
 
       <section className={styles.price}>
-        <h2 className="title">Price<div>価格</div></h2>
+        <h2 className="title">Price<div>基本価格</div></h2>
         <div className="container">
           <div className={styles.plan}>
             <h3>基本プランに含まれるもの</h3>
@@ -75,9 +75,10 @@ const Service = () => {
               <li>レスポンシブ対応</li>
               <li>WordPressのインストール・セットアップ</li>
               <li>ブログ機能</li>
-              <li>SNSボタン設置</li>
               <li>お問い合わせフォーム</li>
-              <li>SEO対策・セキュリティ対策</li>
+              <li>SNSボタン設置</li>
+              <li>SEO対策</li>
+              <li>セキュリティ対策</li>
               <li>アクセス解析ツール</li>
               <li>操作レクチャー</li>
             </ul>
