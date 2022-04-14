@@ -1,8 +1,10 @@
 import React from "react"
-import { graphql } from "gatsby"
+import { Link, graphql } from "gatsby"
 import { GatsbyImage } from "gatsby-plugin-image"
 import Layout from '../../components/layout'
+
 import * as styles from "../../styles/_post.module.scss"
+import * as button from "../../styles/_button.module.scss"
 
 const PostTemplate = ({data}) => {
   const { markdownRemark } = data // data.markdownRemark holds your post data
@@ -23,15 +25,15 @@ const PostTemplate = ({data}) => {
           <dd>{frontmatter.title}</dd>
         </dl>
         <dl>
-          <dt>制作年月</dt>
-          <dd>{frontmatter.date}</dd>
+          <dt>制作時期</dt>
+          <dd>{frontmatter.date}年</dd>
         </dl>
         <dl>
-          <dt>担当</dt>
+          <dt>担当領域</dt>
           <dd>{frontmatter.scope}</dd>
         </dl>
         <dl>
-          <dt>ツール</dt>
+          <dt>技術仕様</dt>
           <dd>{frontmatter.tool}</dd>
         </dl>
         <dl>
@@ -44,6 +46,9 @@ const PostTemplate = ({data}) => {
         />
       </div>
     </article>
+    <div style={{textAlign:`center`, margin:`3rem auto`}}>
+      <Link to ="/gallery/" className={button.btn}>制作事例に戻る</Link>
+    </div>
     </Layout>
   )
 }
@@ -56,7 +61,7 @@ export const pageQuery = graphql`
       html
       frontmatter {
         title
-        date(formatString: "YYYY/MM")
+        date(formatString: "YYYY")
         category
         tool
         url

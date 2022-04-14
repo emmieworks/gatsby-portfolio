@@ -1,5 +1,4 @@
 import * as React from 'react'
-import { Link } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
 import Layout from '../components/layout'
 import Seo from "../components/seo"
@@ -28,7 +27,7 @@ const About = () => {
       <div className={styles.right}>
         <h2 className="title">Profile<div>プロフィール</div></h2>
         <p>見つけていただきありがとうございます♪<br />
-        東京を拠点に活動しているフリーランスのWebデザイナー＆エンジニアのえみです。</p>
+        東京を拠点に活動しているフリーランスのWebエンジニアのえみです。</p>
         <p>元々はシステムエンジニア・コンサルタントとして働いていました。<br />
         「Web技術をベースに、お客さまの活動に寄りそうサポートしたい。」と思い、独立しました。<br />
         主に、女性起業家さん、中小企業主さん向けに、WordPressでホームページを作成しています。<br />
@@ -50,26 +49,26 @@ const About = () => {
     <section className={styles.skill}>
       <h2 className="title">Skills<div>お手伝いできること</div></h2>
       <div className={`container ${styles.grid}`}>
-        <div className={styles.icon}>
-          <FaPalette size="4rem" />
-        </div>
         <div>
+          <div className={styles.icon}>
+            <FaPalette size="5rem" />
+          </div>
           <h3>Web Design</h3>
           <p>伝えたい情報を整理して、見やすく使いやすいサイトをデザインします。特に、女性向けの柔らかいデザインやシンプルで洗練されたデザインが得意です。</p>
         </div>
-        <div className={styles.icon}>
-          <FaCode size="4rem" />
-        </div>
         <div>
+          <div className={styles.icon}>
+            <FaCode size="5rem" />
+          </div>
           <h3>Coding</h3>
           <p>サイトの目的や将来性にあわせて、必要な機能を提案します。今後のメンテナンス性を考慮した、見やすいコーディングを行います。</p>
         </div>
-        <div className={styles.icon}>
-          <FaWordpress size="4rem" />
-        </div>
         <div>
-          <h3>WordPress</h3>
-          <p>ご自身でブログやページを更新される方にはWordPressをお勧めしています。セットアップからカスタマイズ、操作レクチャーを行います。</p>
+          <div className={styles.icon}>
+            <FaWordpress size="5rem" />
+          </div>
+            <h3>WordPress</h3>
+            <p>ご自身でブログやページを更新される方にはWordPressをお勧めしています。セットアップからカスタマイズ、操作レクチャーを行います。</p>
         </div>
       </div>
       <div className="container" style={{margin: `3rem auto`}}>
@@ -92,29 +91,26 @@ const About = () => {
       <h2>対応が難しい作業</h2>
       <div className={styles.grid}>
         <div>
-          <div style={{textAlign:`center`}}>
+          <div className={styles.icon}>
             <GoGraph size="4rem" />
           </div>
           <h3>マーケティング</h3>
-          <p>商品・サービスのマーケティング戦略については、専門外のため、事前にお客さまの方でご検討ください。お客さまのやりたいことに対して、Webをどう活用できるか、技術的な側面でサポートをさせていただきます。</p>
+          <p>商品・サービスのマーケティング戦略については、専門外のため、事前にお客さまの方でご検討ください。<br />お客さまのやりたいことに対して、Webをどう活用できるか、技術的な側面でサポートをさせていただきます。</p>
         </div>
         <div>
-          <div style={{textAlign:`center`}}>
+          <div className={styles.icon}>
             <GoDatabase size="4rem" />
           </div>
           <h3>サーバーの構築・運用管理</h3>
-          <p>
-            サーバー・ドメインの紐付け、WordPressのインストールなど、基本的なセットアップは対応できます。個人で活動しているため、サーバーの運用管理などは業務としての対応が難しい範囲です。新規にホームページを立ち上げる場合には、用途に合わせてサーバー会社の活用をご提案しております。
-          </p>
+          <p>サーバー・ドメインの紐付け、WordPressのインストールなど、基本的なセットアップは対応できます。サーバーの運用管理などは対応が難しい範囲です。<br />新規にホームページを立ち上げる場合には、用途に合わせてサーバー会社の活用をご提案しております。</p>
         </div>
         <div>
-          <div style={{textAlign:`center`}}>
+          <div className={styles.icon}>
             <GoFileMedia size="4rem" />
           </div>
           <h3>原稿・写真など素材の作成</h3>
-          <p>
-            ホームページに掲載する文章や、写真などの素材は、お客様の思いを反映する要のコンテンツですので、ご自身でご用意いただいております。
-            写真など素材については、画像／写真素材を購入したり、イメージをお伺いしながらこちらでも作成できることがありますので、ご相談ください。
+          <p>ホームページに掲載する文章や、写真などの素材は、お客様の思いを反映する部分ですので、ご自身でご用意いただいております。<br />
+            素材については、画像／写真素材を購入したり、イメージをお伺いしながらこちらでも作成できる場合がありますので、ご相談ください。
           </p>
         </div>
       </div>
@@ -125,7 +121,7 @@ const About = () => {
       <div className={`container ${styles.container}`}>
         <ul className={styles.timeline}>
           <li>1987年　東京生まれ</li>
-          <li>2000年　学生時代から趣味でホームページや簡単なプログラムを作る</li>
+          <li>2000年　学生時代から趣味でホームページや簡単なプログラムを組む</li>
           <li>2006年　アメリカの大学でコンピューターサイエンスを専攻</li>
           <li>2010年　IT企業でシステムエンジニア・ITコンサルタントとして働く</li>
           <li>2014年　コンサルティングファームで経営コンサルタントとして働く</li>

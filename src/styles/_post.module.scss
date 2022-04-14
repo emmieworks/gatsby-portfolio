@@ -1,6 +1,5 @@
 @charset "UTF-8";
 @import 'setting';
-
 .post{
   dl{
     border-top: 1px solid $second_light_color;
@@ -19,6 +18,54 @@
     }
     dd{
       margin-left: 12%;
+    }
+  }
+
+  div.box{
+    background: $main_light_color;
+    font-size: 0.9em;
+    padding: 1.2em 2em;
+    line-height: 1.8em;
+  }
+
+  h1{
+    font-family: 'Montserrat', 'Noto Sans JP', sans-serif;
+    color: $main_color;
+    font-size: 1.6rem;
+    line-height: 2;
+    font-weight: 700;
+    margin: 2.5rem auto;
+    text-align: center;
+  }
+  h2,h3{
+    font-family: 'Montserrat', 'Noto Sans JP', sans-serif;
+    color: $main_color;
+    font-size: 1.4rem;
+    line-height: 2;
+    font-weight: 700;
+    margin-top: 2.2rem;
+    margin-bottom: 2.2rem;
+    text-align: left;
+  }
+  h2{
+    &:before{
+      content: "■";
+    }
+  }
+  h3{
+    &:before{
+      content: "□";
+    }
+  }
+
+  ul{
+    padding: 1rem 1.5rem;
+    line-height: 2;
+    li{
+      margin-left: 1rem;
+      &:before{
+        color: $main_light_color;
+      }
     }
   }
 }

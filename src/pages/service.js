@@ -3,8 +3,8 @@ import { StaticImage } from "gatsby-plugin-image"
 import Layout from '../components/layout'
 import Seo from "../components/seo"
 import Contact from "../components/contact"
-import * as styles from "../styles/_service.module.scss"
 
+import * as styles from "../styles/_service.module.scss"
 
 const Service = () => {
   return (
@@ -38,7 +38,7 @@ const Service = () => {
               <div>確かな技術でお客さまに合った仕組みを提案</div>
               ホームページはビジネス活動を下支えするもの。<br />
               システムエンジニア・コンサルタントタントだった経験を活かし、お客さまのビジネスの全体像を把握します。<br/>
-              その上で、SNS活用や集客から申込みまでの導線など、最適なホームページの仕組みをご提案します。
+              その上で、集客から申込みまでの導線など、最適なホームページの仕組みをご提案します。
             </li>
             <li>
               <div>魅力が伝わるコンセプト設計</div>
@@ -52,7 +52,7 @@ const Service = () => {
               また、スマホ対応、SEO対策、セキュリティ対策など安心してホームページを続けるための設定もしっかり行います。</li>
             <li>
               <div>ご自身でホームページを運営できるようサポート</div>
-              ホームページは作って終わりではなく、育てていくことを大切にしています。<br/>
+              作って終わりではなく、ホームページを育てることを大切にしています。<br/>
               WordPressの操作レクチャーやメンテナンス方法など、お客様自身でホームページを運営できるようサポートしています。
             </li>
             <li>
@@ -111,7 +111,7 @@ const Service = () => {
         <div className="container" style={{margin: `4rem auto`}}>
         <dl>
           <dt>制作期間はどれくらいですか？</dt>
-          <dd>5ページ程度のホームページで2〜3ヶ月の期間をいただいております。<br / >
+          <dd>基本プラン（5ページ程度）のホームページで2〜3ヶ月の期間をいただいております。<br / >
             制作の過程でお客様に原稿・素材のご用意をいただいたり、デザインやWebページのチェックなどをしていただきます。<br / >
             お客様にお願いした作業が遅れてしまいますと、その分スケジュールも伸びてしまいますのでご協力よろしくお願いします。
           </dd>

@@ -1,20 +1,30 @@
 @charset "UTF-8";
 @import 'setting';
+
 body{
   font-family: 'Montserrat', 'Noto Sans JP', sans-serif;
   font-weight: 100;
-  line-height: 1.8;
+  line-height: 1.6;
   background-color: $white_color;
   color: $font_color;
 }
 a{
   color: $link_color;
   text-decoration: none;
+  transition : 0.5s;
+  &:hover{
+    opacity: 0.5;
+    transition : 0.5s;
+  }
 }
 p{
-  padding: 1rem 0;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  line-height: 1.9;
+  @media screen and (min-width: $pc_min) {
+    line-height: 2;
+  }
 }
-
 
 .container{
   margin: 0 auto;
@@ -41,7 +51,6 @@ h2{
   text-align: center;
 }
 
-
 h3{
   font-family: 'Cormorant Garamond', serif;
   font-size: 2rem;
@@ -59,6 +68,6 @@ h3{
       margin: 0.1rem auto 0.5rem auto;
     }
     font-size: 0.4em;
-    font-family: 'Noto Sans JP', sans-serif;
+    font-family: 'Montserrat', 'Noto Sans JP', sans-serif;
   }
 }
