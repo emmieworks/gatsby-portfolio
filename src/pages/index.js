@@ -26,7 +26,7 @@ const IndexPage = ({data}) => {
     <section id="service" className={styles.service}>
       <h2 className="title">Service<div>サービス</div></h2>
       <div style={{textAlign:`center`, margin:`4rem auto`, padding:`0 1rem`, fontSize:`0.9em`}}>
-      女性起業家さんや中小企業さん向けに、目的に叶うホームページ・ブログを一緒に作っていきます。<br />
+      個人さま・法人さまに、目的に叶うホームページ・ブログを一緒に作っていきます。<br />
       また、ご自身でホームページを作りたい方に「WordPress個人レッスン」を提供しています。<br/>
       お仕事への想いに丁寧によりそい、Webの力で活動をサポートします。
       </div>
