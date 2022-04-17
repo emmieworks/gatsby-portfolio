@@ -1,5 +1,5 @@
 ---
-title: 株式会社 ビードゥー様　(BeDoh Corpration)
+title: 株式会社 ビードゥー様　(BeDoh Corporation)
 date: 2022-04-11
 category: Webサイト
 tool: WordPress、テーマ「Snow Monkey」
@@ -9,9 +9,9 @@ featured: icatch.png
 slug: work09
 ---
 
-# 株式会社 Bedohさまのホームページを作成させていただきました
+# 株式会社 ビードゥー様のホームページを作成させていただきました
 
-株式会社 Bedohさまより、新しいコーポーレトサイト立ち上げをご依頼いただきました。
+株式会社 ビードゥー様より、新しいコーポーレトサイト立ち上げをご依頼いただきました。
 
 ヒアリング時点で、<br />
 「どんな目的でホームページを作るか」<br />
