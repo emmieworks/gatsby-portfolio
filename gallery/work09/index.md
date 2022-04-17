@@ -1,5 +1,5 @@
 ---
-title: 株式会社 BeDoh様
+title: 株式会社 ビードゥー様　(BeDoh Corpration)
 date: 2022-04-11
 category: Webサイト
 tool: WordPress、テーマ「Snow Monkey」
