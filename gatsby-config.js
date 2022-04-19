@@ -54,11 +54,9 @@ module.exports = {
       },
     },
     {
-      resolve: "gatsby-plugin-google-gtag",
+      resolve: "gatsby-plugin-google-tagmanager",
       options: {
-        gtagConfig: {
-          optimize_id: "GTM-WSJHKQM",
-        },
+        id: "GTM-WSJHKQM",
       },
     },
     {
